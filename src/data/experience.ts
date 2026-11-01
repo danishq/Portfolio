@@ -1,0 +1,68 @@
+import type { ExperienceItem } from '../types';
+
+export const EXPERIENCES: ExperienceItem[] = [
+  {
+    id: 'adflipr',
+    company: 'AdFlipr',
+    role: 'Full Stack Developer',
+    period: 'August 2025 – Present',
+    isCurrent: true,
+    summary:
+      'Architecting resilient backend workflows and high-performance search infrastructure in Java and Spring Boot, paired with clean, accessible React systems.',
+    contributions: [
+      'Developed core REST APIs and backend business workflows using Java and Spring Boot.',
+      'Implemented campaign workflows, automated domain verification pipelines, and user account management.',
+      'Constructed optimized MongoDB queries, indexing strategies, and high-throughput data retrieval paths.',
+      'Designed and tuned Elasticsearch search queries, multi-criteria filters, and analytical aggregations.',
+      'Implemented robust stateless JWT-based authentication and authorization controls.',
+      'Integrated mission-critical third-party integrations including Mailgun webhooks and Razorpay payment flows.',
+      'Worked with Change Data Capture (CDC) pipelines to sync datastores reliably in near-real-time.',
+      'Refactored React application architecture to improve modularity, type safety, and component maintainability.',
+      'Engineered an interactive email and popup template builder powered by GrapesJS.',
+      'Implemented comprehensive internationalization (i18n) across seven languages.',
+      'Developed native browser Web Push notification infrastructure using Service Workers, Push API, and VAPID.',
+      'Authored a standalone WordPress/WooCommerce integration plugin for e-commerce synchronization.',
+    ],
+    technologies: [
+      'Java',
+      'Spring Boot',
+      'MongoDB',
+      'Elasticsearch',
+      'JWT',
+      'Change Data Capture (CDC)',
+      'React',
+      'TypeScript',
+      'GrapesJS',
+      'Service Workers',
+      'Razorpay',
+      'Mailgun',
+      'WordPress',
+    ],
+  },
+  {
+    id: 'mangrove-life',
+    company: 'The Mangrove Life',
+    role: 'Frontend Developer',
+    period: 'March 2024 – July 2025',
+    isCurrent: false,
+    summary:
+      'Engineered responsive, accessible client-side interfaces and structured Redux state architectures consuming upstream REST services.',
+    contributions: [
+      'Developed modular, reusable React component libraries adhering to strict interface boundaries.',
+      'Integrated RESTful API endpoints with structured request caching and resilient error handling.',
+      'Architected predictable global state management utilizing Redux Toolkit.',
+      'Built responsive, cross-browser interfaces using modern HTML, semantic CSS, JavaScript, and Tailwind CSS.',
+      'Improved component maintainability, rendering performance, and frontend user experience.',
+      'Collaborated closely across testing, iterative debugging, and team code reviews.',
+    ],
+    technologies: [
+      'React.js',
+      'Redux Toolkit',
+      'JavaScript (ES6+)',
+      'Tailwind CSS',
+      'HTML5',
+      'CSS3',
+      'REST APIs',
+    ],
+  },
+];
