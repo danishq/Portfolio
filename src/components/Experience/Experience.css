@@ -67,6 +67,8 @@
   color: var(--color-accent);
 }
 
+
+
 .experience-period {
   font-family: var(--font-mono);
   font-size: 0.825rem;
@@ -80,6 +82,7 @@
 
 .experience-summary {
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1.6;
   color: var(--color-text-primary);
   margin-bottom: 24px;

@@ -8,6 +8,12 @@ export interface ExperienceItem {
   summary: string;
   contributions: string[];
   technologies: string[];
+  link?: string[];
+}
+
+export interface EngineeringDecisions {
+  approach: string;
+  tradeOffs: string;
 }
 
 export interface ProjectItem {
@@ -19,7 +25,7 @@ export interface ProjectItem {
   contributions: string[];
   githubUrl?: string;
   liveUrl?: string;
-  architectureNote?: string;
+  engineeringDecisions?: EngineeringDecisions;
   featured?: boolean;
 }
 

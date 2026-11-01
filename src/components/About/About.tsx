@@ -10,7 +10,7 @@ export function About() {
             Understanding how systems fit together
           </h2>
           <p className="section-lead">
-            Bridging production backend reliability with performant, maintainable client-side architecture.
+            Connecting backend data workflows with maintainable frontend features.
           </p>
         </div>
 
@@ -22,14 +22,12 @@ export function About() {
             </p>
             <p className="about-body-text">
               My experience spans production backend workflows, search and analytics systems,
-              application integrations, and React-based interfaces. I believe software engineering is
-              at its best when data flow is predictable, system boundaries are respected, and technical
-              trade-offs are evaluated with operational reality in mind.
+              application integrations, and React-based interfaces. I focus on clean component
+              structure, reliable data flow between services, and practical engineering trade-offs.
             </p>
             <p className="about-body-text">
-              Whether designing clean REST contracts in Spring Boot, tuning multi-condition Elasticsearch
-              filters, or organizing reusable React primitives with strict state separation, I prioritize
-              maintainability, correctness, and speed.
+              Whether writing REST endpoints in Spring Boot, tuning Elasticsearch queries, or
+              building modular React components, I prioritize maintainability, correctness, and clarity.
             </p>
           </div>
 
@@ -44,11 +42,11 @@ export function About() {
                     <line x1="6" y1="18" x2="6.01" y2="18" />
                   </svg>
                 </div>
-                <h3 className="focus-card-title">Backend Architecture & APIs</h3>
+                <h3 className="focus-card-title">Backend Services &amp; APIs</h3>
               </div>
               <p className="focus-card-desc">
-                Constructing predictable, type-safe REST APIs in Java and Spring Boot. Implementing stateless
-                JWT security, handling webhooks asynchronously, and managing domain lifecycles.
+                Developing REST APIs in Java and Spring Boot, implementing JWT authentication,
+                and handling webhook integrations and core business workflows.
               </p>
             </div>
 
@@ -61,11 +59,11 @@ export function About() {
                     <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
                   </svg>
                 </div>
-                <h3 className="focus-card-title">Query Tuning, Search & CDC</h3>
+                <h3 className="focus-card-title">Databases, Search &amp; CDC</h3>
               </div>
               <p className="focus-card-desc">
-                Designing structured document schemas in MongoDB, crafting Elasticsearch aggregation
-                pipelines, and leveraging Change Data Capture (CDC) to synchronize datastores.
+                Writing MongoDB queries and filters, configuring Elasticsearch search queries and
+                aggregations, and working with Change Data Capture (CDC) pipelines.
               </p>
             </div>
 
@@ -77,11 +75,11 @@ export function About() {
                     <polyline points="8 6 2 12 8 18" />
                   </svg>
                 </div>
-                <h3 className="focus-card-title">Frontend Architecture & Tooling</h3>
+                <h3 className="focus-card-title">Frontend Features &amp; Tooling</h3>
               </div>
               <p className="focus-card-desc">
-                Structuring React & TypeScript applications with clear single sources of truth. Building
-                builder canvas interfaces, native Service Workers, and cross-framework developer integrations.
+                Building modular React and TypeScript components, developing template builders with
+                GrapesJS, and working with browser Service Workers.
               </p>
             </div>
           </div>

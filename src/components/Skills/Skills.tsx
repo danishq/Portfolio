@@ -8,10 +8,10 @@ export function Skills() {
         <div className="section-header">
           <div className="section-eyebrow">Technical Competencies</div>
           <h2 id="skills-heading" className="section-title">
-            Skills & Technology Stack
+            Skills &amp; Technologies
           </h2>
           <p className="section-lead">
-            Categorized technical stack focused on scalable backend systems, robust storage, and maintainable frontends.
+            Technical stack categorized by core engineering domain.
           </p>
         </div>
 
@@ -20,7 +20,6 @@ export function Skills() {
             <div key={category.id} className="skill-category-card">
               <div className="skill-category-header">
                 <h3 className="skill-category-title">{category.title}</h3>
-                <span className="skill-category-count">{category.skills.length} technologies</span>
               </div>
               <div className="skills-tags-wrap" aria-label={`${category.title} skills`}>
                 {category.skills.map((skill) => (

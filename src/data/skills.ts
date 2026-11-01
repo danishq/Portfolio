@@ -3,7 +3,7 @@ import type { SkillCategory } from '../types';
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     id: 'backend',
-    title: 'Backend Engineering',
+    title: 'Backend',
     skills: [
       'Spring Boot',
       'Spring Security',
@@ -38,35 +38,36 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     id: 'frontend',
-    title: 'Frontend Architecture',
+    title: 'Frontend',
     skills: [
       'React.js',
-      'TypeScript',
       'Redux Toolkit',
-      'GrapesJS Builder',
-      'Service Workers & Push API',
+      'GrapesJS',
       'Tailwind CSS',
-      'i18n (7 Languages)',
-      'HTML5 / CSS3',
+      'HTML',
+      'CSS',
+      'i18n',
+      'Service Workers',
+      'Web Push API',
     ],
   },
   {
     id: 'integrations',
     title: 'Integrations',
     skills: [
-      'Mailgun Webhooks',
+      'Mailgun',
       'Razorpay',
-      'WordPress Plugin Dev',
-      'WooCommerce API',
+      'WordPress',
+      'WooCommerce',
     ],
   },
   {
     id: 'infrastructure',
-    title: 'Infrastructure & Tooling',
+    title: 'Infrastructure & Tools',
     skills: [
-      'Linux / Ubuntu VM',
       'Docker',
-      'Oracle Cloud (OCI)',
+      'Linux',
+      'Oracle Cloud',
       'Git',
       'Cron Jobs',
       'Graphify',

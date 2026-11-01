@@ -6,51 +6,62 @@ export const PROJECTS: ProjectItem[] = [
     title: 'AI-Assisted Codebase Intelligence',
     subtitle: 'Knowledge Graph Integration via Model Context Protocol (MCP)',
     description:
-      'Engineered a multi-repository knowledge graph integration pipeline connecting developer tooling with codebase context across heterogeneous tech stacks.',
-    technologies: ['Graphify', 'Python', 'MCP Protocol', 'Antigravity', 'AST Parsing'],
+      'Integrated Graphify across four repositories (React, Spring Boot, WordPress, and Shopify) to generate codebase knowledge graphs and expose them to AI coding agents via MCP.',
+    technologies: ['Graphify', 'Python', 'Model Context Protocol (MCP)', 'Antigravity'],
     contributions: [
-      'Integrated Graphify across four distinct production codebases: React, Spring Boot, WordPress, and Shopify.',
-      'Constructed individual and unified codebase knowledge graphs mapping explicit relationships across files, functions, AST symbols, imports, and cross-service dependencies.',
-      'Configured a custom Model Context Protocol (MCP) server integration with Antigravity agentic workflows.',
-      'Enabled AI coding agents to deterministically query codebase topology, find circular dependencies, and retrieve contextual architectural context during debugging and code generation.',
+      'Generated individual and unified knowledge graphs mapping relationships between files, functions, imports, and dependencies across four distinct codebases.',
+      'Configured Graphify MCP integration with Antigravity, enabling coding agents to query repository knowledge graphs and retrieve codebase context for code exploration and dependency analysis.',
+      'Structured graph representations to provide relevant structural context without requiring full repository file dumps in agent workflows.',
     ],
-    architectureNote:
-      'Focuses on static graph extraction, MCP server IPC, and context retrieval without hallucinating custom ML models.',
+    engineeringDecisions: {
+      approach:
+        'Used Graphify to statically analyze files, functions, and import paths across React, Spring Boot, WordPress, and Shopify repositories, producing unified graph representations of cross-file dependencies.',
+      tradeOffs:
+        'Connecting the knowledge graph via an MCP server allows coding agents to query specific graph neighborhoods on demand. This provides structural context while avoiding the token overhead and hallucination risks of feeding raw repository files into prompts.',
+    },
     featured: true,
   },
   {
     id: 'adflipr-woocommerce',
     title: 'AdFlipr for WooCommerce',
-    subtitle: 'E-Commerce Synchronization & Real-Time Event Pipeline',
+    subtitle: 'WordPress & WooCommerce Integration Plugin',
     description:
-      'Independently authored an extensible WordPress/WooCommerce plugin connecting merchant e-commerce storefronts with AdFlipr via real-time webhooks and secure REST endpoints.',
-    technologies: ['PHP', 'WordPress', 'WooCommerce', 'REST APIs', 'Webhooks', 'HMAC Auth'],
+      'An integration plugin connecting WooCommerce stores with AdFlipr via REST APIs and webhooks for product, order, checkout, and abandoned cart events.',
+    technologies: ['PHP', 'WordPress', 'WooCommerce', 'REST APIs', 'Webhooks'],
     contributions: [
-      'Engineered an event-driven synchronization bridge handling high-frequency merchant store activity.',
-      'Implemented secure webhook dispatching for checkout events, order creation, inventory changes, and abandoned cart detection.',
-      'Designed a resilient token-based handshake and credential validation layer ensuring tamper-proof communication.',
-      'Structured background synchronization jobs adhering to WordPress coding standards and minimal store performance impact.',
+      'Developed a standalone WordPress plugin connecting WooCommerce e-commerce stores with AdFlipr.',
+      'Implemented product and order data synchronization using WooCommerce APIs.',
+      'Processed webhook events for checkout activity and abandoned cart occurrences.',
+      'Built secure authentication handling between merchant stores and AdFlipr endpoints.',
     ],
     githubUrl: 'https://github.com/devadflipr/adflipr',
-    architectureNote:
-      'Decoupled webhook queuing to ensure zero impact on customer checkout latency.',
+    engineeringDecisions: {
+      approach:
+        'Utilized standard WordPress plugin architecture and WooCommerce action hooks to capture checkout actions, order updates, and cart abandonment events as they occur.',
+      tradeOffs:
+        'Dispatched webhook events directly to AdFlipr REST endpoints with token authentication rather than storing event queues in merchant databases, minimizing plugin overhead on store checkout response times.',
+    },
     featured: true,
   },
   {
     id: 'notes-management-system',
     title: 'Notes Management System',
-    subtitle: 'Full-Stack REST Architecture with Spring Boot & PostgreSQL',
+    subtitle: 'Full-Stack Application with Spring Boot & PostgreSQL',
     description:
-      'Architected an end-to-end notes management system highlighting clean separation of concerns, transactional integrity, and token-based security.',
+      'A full-stack notes management application with token-based authentication, a Spring Boot REST API, PostgreSQL persistence, and a React frontend.',
     technologies: ['Java', 'Spring Boot', 'Spring Security', 'Spring Data JPA', 'PostgreSQL', 'React'],
     contributions: [
-      'Constructed a RESTful API layer in Spring Boot enforcing strict DTO validation and comprehensive error handling.',
-      'Implemented secure stateless JWT authentication and authorization filters using Spring Security.',
-      'Configured Spring Data JPA repository interfaces and relational schema mapping over PostgreSQL.',
-      'Developed a responsive, state-aware React interface supporting seamless CRUD interactions with optimistic UI states.',
+      'Developed RESTful API endpoints for note creation, retrieval, updates, and deletion in Spring Boot.',
+      'Implemented secure token-based authentication and endpoint authorization using Spring Security.',
+      'Configured relational schema mappings and query persistence using Spring Data JPA with PostgreSQL.',
+      'Built a React frontend to manage authentication states and notes CRUD interactions.',
     ],
-    architectureNote:
-      'Emphasizes layered domain architecture: Controller → Service → Repository → Persistence.',
+    engineeringDecisions: {
+      approach:
+        'Organized the backend into distinct Controller, Service, and Repository layers to enforce separation between HTTP routing, business logic, and database persistence.',
+      tradeOffs:
+        'Chose stateless JWT authentication to keep API endpoints session-independent, paired with Spring Data JPA for straightforward object-relational mapping without manual SQL boilerplate.',
+    },
     featured: false,
   },
 ];

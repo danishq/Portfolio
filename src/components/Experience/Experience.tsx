@@ -8,10 +8,10 @@ export function Experience() {
         <div className="section-header">
           <div className="section-eyebrow">Career History</div>
           <h2 id="experience-heading" className="section-title">
-            Production Engineering Experience
+            Engineering Experience
           </h2>
           <p className="section-lead">
-            Delivering scalable backend services, optimizing data pipelines, and architecting resilient frontend systems.
+            Building backend services, application workflows, and responsive frontend systems.
           </p>
         </div>
 
@@ -28,12 +28,17 @@ export function Experience() {
                     <span>{exp.role}</span>
                     {exp.isCurrent && <span className="current-badge">Current Role</span>}
                   </h3>
-                  <div className="experience-company">{exp.company}</div>
+                  <div className='experience-company-wrapper'>
+                    <button className='experience-company' onClick={() => window.open(exp.link?.[0], '_blank')}>
+                      {exp.company}
+                    </button>
+                  </div>
                 </div>
                 <div className="experience-period">{exp.period}</div>
               </div>
 
               <p className="experience-summary">{exp.summary}</p>
+
 
               <div className="experience-contributions">
                 {exp.contributions.map((contribution, idx) => (

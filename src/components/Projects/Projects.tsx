@@ -9,10 +9,10 @@ export function Projects() {
         <div className="section-header">
           <div className="section-eyebrow">Featured Work</div>
           <h2 id="projects-heading" className="section-title">
-            Engineered Systems & Tooling
+            Featured Projects
           </h2>
           <p className="section-lead">
-            Production-focused integrations, backend services, and multi-repository developer infrastructure.
+            Selected projects covering developer tooling, e-commerce integrations, and full-stack REST applications.
           </p>
         </div>
 

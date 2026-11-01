@@ -177,6 +177,14 @@
   color: var(--color-text-secondary);
 }
 
+.decision-block {
+  margin-bottom: 14px;
+}
+
+.decision-block:last-child {
+  margin-bottom: 0;
+}
+
 .project-note-label {
   font-family: var(--font-mono);
   font-size: 0.75rem;
