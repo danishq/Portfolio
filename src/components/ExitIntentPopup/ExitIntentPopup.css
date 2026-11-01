@@ -77,7 +77,7 @@
 .exit-timer {
   font-family: var(--font-mono);
   font-size: 0.775rem;
-  color: var(--color-text-muted);
+  color: var(--color-accent);
 }
 
 .exit-heading {

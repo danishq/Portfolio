@@ -44,12 +44,17 @@
 
 .footer-link {
   font-size: 0.875rem;
+  text-decoration: underline;
   color: var(--color-text-secondary);
   transition: color 0.15s ease;
 }
 
 .footer-link:hover {
   color: var(--color-accent);
+  transform: scale(1.5);
+  background-color: var(--color-text-primary);
+  padding: 12px;
+  border-radius: 8px;
 }
 
 .footer-back-to-top {
