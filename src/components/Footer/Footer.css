@@ -52,7 +52,7 @@
 .footer-link:hover {
   color: var(--color-accent);
   transform: scale(1.5);
-  background-color: var(--color-text-primary);
+  background-color: var(--color-text-accent);
   padding: 12px;
   border-radius: 8px;
 }
